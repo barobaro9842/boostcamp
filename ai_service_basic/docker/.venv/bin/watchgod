@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Volumes/GoogleDrive-111094423641400606317/My Drive/boostcamp/code_notes/ai_service_basic/docker/.venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from watchgod.cli import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())
